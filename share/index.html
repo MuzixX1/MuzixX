@@ -19,10 +19,11 @@
         const songId = urlParams.get('id') || '';
         const title = urlParams.get('title') || '';
         const artist = urlParams.get('artist') || '';
+        const artUri = urlParams.get('art') || '';
         const apkDownloadUrl = "https://github.com/Sumit282698/Muzix_X/releases";
 
         document.getElementById('download-link').href = apkDownloadUrl;
-        const appDeepLink = `muzixx://share?id=${songId}&title=${encodeURIComponent(title)}&artist=${encodeURIComponent(artist)}`;
+        const appDeepLink = `muzixx://share?id=${songId}&title=${encodeURIComponent(title)}&artist=${encodeURIComponent(artist)}&art=${encodeURIComponent(artUri)}`;
 
         window.location.href = appDeepLink;
         setTimeout(function() {
