@@ -19,7 +19,7 @@
         const songId = urlParams.get('id') || '';
         const title = urlParams.get('title') || '';
         const artist = urlParams.get('artist') || '';
-        const apkDownloadUrl = "https://github.com/Sumit282698/MuzixX/releases";
+        const apkDownloadUrl = "https://github.com/Sumit282698/Muzix_X/releases";
 
         document.getElementById('download-link').href = apkDownloadUrl;
         const appDeepLink = `muzixx://share?id=${songId}&title=${encodeURIComponent(title)}&artist=${encodeURIComponent(artist)}`;
